@@ -5,7 +5,7 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>
+    <header id="contactHeader">
         <div class="banniere"><img src="logo_Adrar.png" alt="Logo Adrar"></div> <br/>
         <br/>
         <nav><ul>
@@ -21,24 +21,24 @@
     <form method="POST" action="fictif.php">
         <fieldset id="contact">
             <div>
-                <label for="nom">Nom :<span class="oblig">*</span></label>
+                <label for="nom" class="oblig">Nom :</label>
                 <input type="name" placeholder="Votre nom" minlength="2" maxlength="20" required><br/>
-                <label for="nom">Prénom :<span class="oblig">*</span></label>
+                <label for="nom" class="oblig">Prénom :</label>
                 <input type="firstname" placeholder="Votre prénom" minlength="2" maxlength="20" required>
             </div><br/>
             <div>
-                <label for="mail">E-mail : <span class="oblig">*</span></label>
+                <label for="mail" class="oblig">E-mail :</label>
                 <input type="mail" placeholder="Ex : nom.prénom@adrar.com" required>
             </div><br/>
             <div>
-                <label>Votre message :</label><span class="oblig">*</span><textarea cols="70" rows="10" placeholder="Ecrivez votre message ici" required></textarea>
+                <label for="text" class="oblig">Votre message :</label><textarea cols="70" rows="10" placeholder="Ecrivez votre message ici" required></textarea>
             </div><br/>
             <div>
                 <input type="submit" value="Envoyer">
             </div>
         </fieldset>
     </form>
-    <footer>
+    <footer id="contactFooter">
         <img src="ADRAR-FORMATION.png" alt="Logo Adrar">
     </footer>
 </body>
