@@ -8,22 +8,27 @@ body {
     padding: 0;
     margin: 0;
 }
-main {
+#contactMain {
     display: flex;
     flex-direction: column;
+}
+main {
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 5vw;
+    grid-template-rows: auto;
 }
 header {
     margin: 0;
 }
 #htmlHeader,
-#accueilHeader,
-#accueilFooter,
+#indexHeader,
+#indexFooter,
 #htmlFooter {
     background-color: #53b9e7;
 }
 #cssHeader,
 #cssFooter {
-    background-color: #f69e07;
+    background-color:#f69e07;
 }
 #javascriptHeader,
 #javascriptFooter {
@@ -51,7 +56,7 @@ nav ul {
     justify-content: space-evenly;
     padding-left: 0;
 }
-li {
+nav ul li {
     display: flex;
     font-weight: bold;
     list-style: none;
@@ -75,6 +80,15 @@ li a:hover {
 h1 {
     margin-top: 3%;
     align-self: center;
+}
+h2 {
+    color: #53b9e7;
+}
+strong:nth-child(odd) {
+    color: #e44332;
+}
+strong:nth-child(even) {
+    color: #f69e07;
 }
 form {
     align-self: center;
@@ -114,7 +128,69 @@ footer div {
     justify-content: center;
 }
 footer div img {
-
     height: auto;
     margin: 2%;
+}
+main section:first-child,
+main section:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 5vw 1fr;
+    grid-template-rows: auto;
+}
+main section:first-child {
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 2;
+}
+main section article:nth-child(odd) {
+    grid-column: 1;
+}
+main section article:nth-child(even) {
+    grid-column: 3;
+}
+main section article:first-child {
+    grid-row: 1;
+}
+main section article:nth-child(2) {
+    grid-row: 2;
+}
+main section article:nth-child(3) {
+    grid-row: 3;
+}
+main section article:nth-child(4) {
+    grid-row: 4;
+}
+main section article:nth-child(5) {
+    grid-row: 5;
+}
+main section article:nth-child(6) {
+    grid-row: 6;
+}
+main section article:nth-child(7) {
+    grid-row: 7;
+}
+main section article:nth-child(8) {
+    grid-row: 8;
+}
+main section article:nth-child(9) {
+    grid-row: 9;
+}
+main section article:nth-child(10) {
+    grid-row: 10;
+}
+main section:nth-child(2) {
+    grid-row: 4;
+    grid-column: 2 / span 2;
+    justify-self: center;
+    align-self: center;
+    font-size: xx-large;
+    background-color: #81b53e;
+    padding: 2%;
+    border-radius: 5%;
+}
+main section:nth-child(3) {
+    grid-row: 5 / span 3;
+    grid-column: 2 / span 2;
+}
+@media only screen and (max-width: 1000px) {
+   
 }
