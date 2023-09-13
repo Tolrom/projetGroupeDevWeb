@@ -240,6 +240,10 @@ main section article img {
 h1 + img{
     align-self: center;
 }
+#logocss {
+    width: 50%;
+    height: auto;
+}
 @media only screen and (max-width: 1000px) {
    
 }
