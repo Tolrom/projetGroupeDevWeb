@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="banniere"><img src="" alt="Adrar"  width="800px" height="200px"></div> <br/>
+        <br/>
+        <nav><ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="lien">HTML</a></li>
+                <li><a href="lien">CSS</a></li>
+                <li><a href="lien">JavaScript</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contactez nous</h1>
+    <form method="POST" action="fictif.php">
+        <fieldset id="contact">
+            <div>
+                <label for="nom">Nom :<span class="oblig">*</span></label>
+                <input type="name" placeholder="Votre nom" minlength="2" maxlength="20" required><br/>
+                <label for="nom">Prénom :<span class="oblig">*</span></label>
+                <input type="firstname" placeholder="Votre prénom" minlength="2" maxlength="20" required>
+            </div><br/>
+            <div>
+                <label for="mail">E-mail : <span class="oblig">*</span></label>
+                <input type="mail" placeholder="Ex : nom.prénom@adrar.com" required>
+            </div><br/>
+            <div>
+                <label>Votre message :</label><span class="oblig">*</span><textarea cols="70" rows="10" placeholder="Ecrivez votre message ici" required></textarea>
+            </div><br/>
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
