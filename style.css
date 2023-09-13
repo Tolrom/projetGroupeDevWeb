@@ -8,6 +8,10 @@ body {
     padding: 0;
     margin: 0;
 }
+main {
+    display: flex;
+    flex-direction: column;
+}
 header {
     margin: 0;
 }
@@ -62,14 +66,14 @@ li a:hover {
 }
 .banniere {
     display: flex;
-    padding: 3%;
+    padding: 2%;
 }
-.banniere img {
-    width: 10%;
+.banniere div img{
+    width: 75%;
     height: auto;
 }
 h1 {
-    margin-left: 10%;
+    align-self: center;
 }
 form {
     align-self: center;
