@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+header {
+    margin: 0;
+}
+#htmlHeader,
+#accueilHeader,
+#accueilFooter,
+#htmlFooter {
+    background-color: #53b9e7;
+}
+#cssHeader,
+#cssFooter {
+    background-color: #f69e07;
+}
+#javascriptHeader,
+#javascriptFooter {
+    background-color: #e44332;
+}
+#apiHeader, 
+#contactHeader,
+#apiFooter,
+#contactFooter {
+    background-color: #81b53e;
+}
+.oblig::after {
+    content: "*";
+    color: red;
+}
+nav {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0));
+    background-color: rgb(255, 255, 244);
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+li {
+    display: flex;
+    font-weight: bold;
+    list-style: none;
+    justify-self: stretch;
+} 
+li a {
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    color: gray;
+}
+.banniere {
+    display: flex;
+    padding: 3%;
+}
+.banniere img {
+    width: 10%;
+    height: auto;
+}
+h1 {
+    margin-left: 10%;
+}
+form {
+    align-self: center;
+}
+fieldset {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+}
+fieldset input {
+    width: 40%;
+}
+fieldset label {
+    width: fit-content;
+    margin: 1% 0 1% 0;
+}
+fieldset input:last-child {
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    align-self: center;
+    padding: 1% 0 1% 0;
+}
+footer {
+    margin-top: 10%;
+    width: 100%;
+    align-self: flex-end;
+}
