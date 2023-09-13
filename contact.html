@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header id="contactHeader">
+        <div class="banniere">
+            <div>
+                <img src="logo_Adrar.png" alt="Logo Adrar" href="index.html">
+            </div>
+        </div>
+        <nav><ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="lien">HTML</a></li>
+                <li><a href="lien">CSS</a></li>
+                <li><a href="lien">JavaScript</a></li>
+                <li><a href="lien">API</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><h1>Contactez nous</h1>
+        <form method="POST" action="fictif.php">
+            <fieldset id="contact">
+                <label for="nom" class="oblig">Nom :</label>
+                <input type="name" placeholder="Votre nom" minlength="2" maxlength="20" required>
+                <label for="nom" class="oblig">Prénom :</label>
+                <input type="firstname" placeholder="Votre prénom" minlength="2" maxlength="20" required>
+                <label for="mail" class="oblig">E-mail :</label>
+                <input type="mail" placeholder="Ex : nom.prénom@adrar.com" required>
+                <label for="text" class="oblig">Votre message :</label><textarea cols="70" rows="10" placeholder="Ecrivez votre message ici" required></textarea>
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+</main>
+    <footer id="contactFooter">
+        <div>
+          <img src="ADRAR-FORMATION.png" alt="Logo Adrar">
+        </div>
+    </footer>
+</body>
+</html>
